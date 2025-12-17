@@ -2,23 +2,23 @@
 
 Backend RESTful API desarrollado con Node.js, Express y MongoDB para gestionar ventas e inventario.
 
-## 🚀 Características
+##  Características
 
-- ✅ CRUD completo para Inventario
-- ✅ CRUD completo para Ventas con múltiples productos
-- ✅ Gestión automática de stock
-- ✅ Cálculo automático de totales
-- ✅ Validaciones de datos
-- ✅ Filtros y búsquedas
-- ✅ Estadísticas de ventas
+-  CRUD completo para Inventario
+-  CRUD completo para Ventas con múltiples productos
+-  Gestión automática de stock
+-  Cálculo automático de totales
+-  Validaciones de datos
+-  Filtros y búsquedas
+-  Estadísticas de ventas
 
-## 📋 Requisitos Previos
+##  Requisitos Previos
 
 - Node.js (v16 o superior)
 - MongoDB (local o MongoDB Atlas)
 - npm o yarn
 
-## 🔧 Instalación
+##  Instalación
 
 1. **Instalar dependencias:**
 ```bash
@@ -52,7 +52,7 @@ Modo producción:
 npm start
 ```
 
-## 📚 Endpoints de la API
+##  Endpoints de la API
 
 ### Inventario
 
@@ -76,7 +76,7 @@ npm start
 | PUT | `/api/ventas/:id` | Actualizar venta |
 | DELETE | `/api/ventas/:id` | Eliminar venta (restaura stock) |
 
-## 📝 Ejemplos de Uso
+##  Ejemplos de Uso
 
 ### Crear un Producto
 
@@ -143,7 +143,7 @@ GET http://localhost:3000/api/ventas?estado=Pendiente
 GET http://localhost:3000/api/ventas?fechaInicio=2025-01-01&fechaFin=2025-12-31
 ```
 
-## 🗂️ Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 backend/
@@ -164,7 +164,7 @@ backend/
 └── server.js                # Punto de entrada
 ```
 
-## 🔍 Modelos de Datos
+##  Modelos de Datos
 
 ### Inventario
 ```javascript
@@ -197,7 +197,7 @@ backend/
 }
 ```
 
-## ⚙️ Funcionalidades Especiales
+##  Funcionalidades Especiales
 
 ### Gestión Automática de Stock
 - Al crear una venta, el stock se reduce automáticamente
@@ -214,20 +214,20 @@ backend/
 - Precios no pueden ser negativos
 - Validación de productos existentes al crear ventas
 
-## 🛠️ Herramientas Recomendadas para Probar
+##  Herramientas Recomendadas para Probar
 
 - [Postman](https://www.postman.com/)
 - [Thunder Client](https://www.thunderclient.com/) (extensión de VS Code)
 - [Insomnia](https://insomnia.rest/)
 
-## 📞 Soporte
+##  Soporte
 
 Si tienes problemas con la conexión a MongoDB:
 1. Verifica que MongoDB esté corriendo (si es local)
 2. Revisa las credenciales en el archivo `.env`
 3. Asegúrate de que la URI de conexión sea correcta
 
-## 🎯 Próximos Pasos
+##  Próximos Pasos
 
 - Conectar con tu frontend
 - Agregar autenticación de usuarios
