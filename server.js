@@ -4,6 +4,7 @@ import cors from 'cors';
 import connectDB from './src/config/database.js';
 import inventarioRoutes from './src/routes/inventarioRoutes.js';
 import ventaRoutes from './src/routes/ventaRoutes.js';
+import authRoutes from './src/routes/authRoutes.js';
 
 // Cargar variables de entorno
 dotenv.config();
@@ -22,6 +23,7 @@ connectDB();
 // Rutas
 app.use('/api/inventario', inventarioRoutes);
 app.use('/api/ventas', ventaRoutes);
+app.use('/api/auth', authRoutes);
 
 // Ruta de bienvenida
 app.get('/', (req, res) => {
